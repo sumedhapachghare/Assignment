@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	
+	
+	<!-- <context:annotation-config></context:annotation-config>
+<bean id="objq1" class="Assignment1.Q1" factory-method="getObjQ1"></bean>
+
+
+
+<bean id="ave" class="AssignmentQ2.numb">
+
+		<property name="num">
+			<list>
+				<value>38</value>
+				<value>29</value>
+				<value>44</value>
+				<value>98</value>
+				<value>99</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+	<bean id="objint" class="AssignmentQ3.interest">
+<constructor-arg value="10" type="int"></constructor-arg>
+</bean>
+
+
+
+<bean id="max1" class="AssignmentQ5.maxnumber">
+
+		<property name="numbers">
+			<list>
+				<value>38</value>
+				<value>29</value>
+				<value>44</value>
+				<value>98</value>
+				<value>99</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+	<bean id="vow1" class="AssignmentQ6.Vowel">
+		<property name="st">
+			<array>
+				<value>television</value>
+				<value>computer</value>
+				<value>fly</value>
+				<value>pen</value>
+				<value>speaker</value>
+
+			</array>
+
+		</property>
+
+	</bean>
+	
+	
+	<bean id="array5" class="AssignmentQ7.Merge">
+		<property name="a">
+			<array>
+				<value>10</value>
+				<value>20</value>
+				<value>30</value>
+				<value>40</value>
+
+			</array>
+
+		</property>
+
+	</bean>
+	
+	<bean id="itemlist" class="AssignmentQ8.ascending">
+
+		<property name="item">
+			<list>
+				<value>bag</value>
+				<value>TV</value>
+				<value>Mouse</value>
+				<value>Mobile</value>
+				<value>TV</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="city1"
+		class="AssignmentQ9.distance">
+		<property name="fromCity" value="Pune"></property>
+		<property name="toCity" value="Nagpur"></property>
+		<property name="distance" value="774"></property>
+	</bean>
+
+	<bean id="city2"
+		class="AssignmentQ9.distance">
+		<property name="fromCity" value="pune"></property>
+		<property name="toCity" value="tuljapur"></property>
+		<property name="distance" value="350"></property>
+	</bean>
+
+	<bean id="city3" class="AssignmentQ9.distance">
+		<property name="fromCity" value="pune"></property>
+		<property name="toCity" value="wardha"></property>
+		<property name="distance" value="780"></property>
+	</bean>
+
+	<bean id="city4"
+		class="AssignmentQ9.distance">
+		<property name="fromCity" value="bhandara"></property>
+		<property name="toCity" value="pune"></property>
+		<property name="distance" value="865"></property>
+	</bean>
+	
+	
+	<bean id="stu11" class="AssignmentQ10.stud">
+		<constructor-arg>
+			<map>
+				<entry key="sumedha" value="420"></entry>
+				<entry key="vidya" value="470"></entry>
+				<entry key="vijay" value="388"></entry>
+				<entry key="vasundhara" value="299"></entry>
+				<entry key="urmila" value="477"></entry>
+				<entry key="hemant" value="300"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="objstud4" class="AssignmentQ11.student">
+<constructor-arg value="Sumedha "></constructor-arg>
+<constructor-arg value="5" type="int"></constructor-arg>
+<constructor-arg value="12-03-1998"></constructor-arg>
+<constructor-arg value="B.E."></constructor-arg>
+<constructor-arg value="ELECTRICAL"></constructor-arg>
+<constructor-arg>
+<ref bean="objresult4"/>
+</constructor-arg>
+</bean>
+	
+	
+	<bean id="objemp5" class="AssignmentQ12.Emp">
+<constructor-arg value=" 1" type="int"></constructor-arg>
+<constructor-arg value="Ankush karande"></constructor-arg>
+<constructor-arg value="23000" type="int"></constructor-arg>
+
+</bean>
+<bean id="objemp1" class="AssignmentQ12.Emp">
+<constructor-arg value=" 2" type="int"></constructor-arg>
+<constructor-arg value="Ajit pise"></constructor-arg>
+<constructor-arg value="21000" type="int"></constructor-arg>
+
+</bean>
+<bean id="objemp2" class="AssignmentQ12.Emp">
+<constructor-arg value=" 3" type="int"></constructor-arg>
+<constructor-arg value="Meghraj more"></constructor-arg>
+<constructor-arg value="20000" type="int"></constructor-arg>
+</bean>
+<bean id="objemp3" class="AssignmentQ12.Emp">
+<constructor-arg value=" 4" type="int"></constructor-arg>
+<constructor-arg value="sudam"></constructor-arg>
+<constructor-arg value="63000" type="int"></constructor-arg>
+
+
+
+</bean>
+<bean id="objemp4" class="AssignmentQ12.Emp">
+<constructor-arg value="5" type="int"></constructor-arg>
+<constructor-arg value="vikas"></constructor-arg>
+<constructor-arg value="40000" type="int"></constructor-arg>
+
+
+
+</bean>
+
+<bean id="objdept" class="AssignmentQ12.Dept">
+<constructor-arg value=" 1" type="int"></constructor-arg>
+<constructor-arg value="it"></constructor-arg>
+
+<constructor-arg>
+<ref bean="objemp5"/>
+</constructor-arg>
+</bean>
+<bean id="objdept1" class="AssignmentQ12.Dept">
+<constructor-arg value=" 2" type="int"></constructor-arg>
+<constructor-arg value="it"></constructor-arg>
+
+<constructor-arg>
+<ref bean="objemp1"/>
+</constructor-arg>
+</bean>
+<bean id="objdept2" class="AssignmentQ12.Dept">
+<constructor-arg value=" 3" type="int"></constructor-arg>
+<constructor-arg value="it"></constructor-arg>
+
+<constructor-arg>
+<ref bean="objemp2"/>
+</constructor-arg>
+</bean>
+<bean id="objdept3" class="AssignmentQ12.Dept">
+<constructor-arg value=" 4" type="int"></constructor-arg>
+<constructor-arg value="Electronics"></constructor-arg>
+
+<constructor-arg>
+<ref bean="objemp3"/>
+</constructor-arg>
+</bean>
+<bean id="objdept4" class="AssignmentQ12.Dept">
+<constructor-arg value=" 5" type="int"></constructor-arg>
+<constructor-arg value="mechanical"></constructor-arg>
+
+<constructor-arg>
+<ref bean="objemp4"/>
+</constructor-arg>
+</bean>
+
+ -->
+<bean id="first" class="AssignmentQ13.showfactory" factory-method="getfirstObject"></bean>
+<bean id="second" class="AssignmentQ13.showfactory" factory-method="getsecondObject"></bean>
+<bean id="third" class="AssignmentQ13.showfactory" factory-method="getthirdObject"></bean>
+	
+ <bean id="circle" class="AssignmentQ14.ShapeFactory" factory-method="getCircleObject"></bean>
+<bean id="rectangle" class="AssignmentQ14.ShapeFactory" factory-method="getRectangleObject"></bean>
+<bean id="square" class="AssignmentQ14.ShapeFactory" factory-method="getSquareObject"></bean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+<bean id="objitem" class="AssignmentQ15.item">
+<constructor-arg value="shirt"></constructor-arg>
+<constructor-arg value="11" type="int"></constructor-arg>
+<constructor-arg value="500" type="float"></constructor-arg>
+<constructor-arg value="10" type="float"></constructor-arg>
+</bean>
+<bean id="objcat" class="AssignmentQ15.category">
+<constructor-arg value="formal"></constructor-arg>
+<constructor-arg value="white"></constructor-arg>
+<constructor-arg>
+<ref bean="objitem"/>
+</constructor-arg></bean>
+<bean id="objcom" class="AssignmentQ15.customer">
+<constructor-arg value="sumedha pachghare"></constructor-arg>
+<constructor-arg value="41 HP1, pune"></constructor-arg>
+<constructor-arg>
+<ref bean="objcat"/>
+</constructor-arg>
+</bean>
+	
+</beans>
